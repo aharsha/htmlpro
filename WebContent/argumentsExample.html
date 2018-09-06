@@ -1,0 +1,34 @@
+<html>
+<body>
+	
+	
+	<script>
+		function ShowMessage(firstName, lastName) 
+		{
+			alert("Hello " + arguments[0] + " " + arguments[1]);
+		}
+		function ShowMessage2() 
+		{
+			alert("Hello " + arguments[0] + " " + arguments[1]);
+		}
+		//as arguments is an array object so we can apply loops
+		function ShowMessage3()
+		{
+
+			for(var i = 0; i < arguments.length; i++){
+				alert(arguments[i]);
+			}
+		}
+
+		ShowMessage("Harsha", "Vardhan"); 
+		ShowMessage2("Harsha", "Vardhan"); 
+		ShowMessage3("Harsha", "Vardhan",100,200); 
+		ShowMessage(100, 200);
+    </script>
+</body>
+</html>
+
+
+<html>
+<body>
+	

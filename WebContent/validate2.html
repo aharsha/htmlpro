@@ -1,0 +1,47 @@
+<html>
+   <head>
+
+           <script>
+               function validate()
+               {
+                   var name = document.forms["fname"]["username"].value;
+                   var p= document.fname.pwd.value;
+                   console.log("testing");
+                   console.log(name==""||name==null);
+                   console.log("testing");
+                   alert(p.length);
+                   
+                   if(name==""||name==Null)
+                   {
+                       alert("name must not be empty");
+                       return false;
+                   }
+                   else if (p.length<6)
+                   {
+           alert("entered password must be atleast 6 characters");
+           return false;
+                   }
+               }
+           </script>
+           <body>
+               
+           <form name="fname" action=""
+           onsubmit = "return validate()" novalidate>
+               user name:<br>
+               <input type="text" name="username">
+               <br>
+               password:<br>
+               <input type="password" name="pwd">
+             <br>
+              email:<br>
+               <input type="text" name="email">
+               <br>
+              phone:<br>
+               <input type="text" name="phone">
+               <br>
+               <br><br>
+               <input type="submit" value="Submit">
+           </form>
+           </body>
+           </html>
+       

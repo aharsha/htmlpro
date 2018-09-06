@@ -1,0 +1,23 @@
+css rule:
+
+syntax:
+-----------
+
+selector
+{
+property:value;
+}
+
+selector:
+-
+specifyes the html element that we want to style
+
+declaration block 
+-------------
+this block follows a selector
+each declaration contains 
+property:
+value:
+
+{
+}
